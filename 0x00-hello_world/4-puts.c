@@ -1,10 +1,8 @@
 #include <stdio.h>
 /**
- * main - Prints program line on screen
+ * Description: main - Prints program line on scree
  *
- * Decscription we will run this again and again
- *
- * return: 0 after returning the function
+ * Return: 0 after returning the function
  */
 int main(void)
 {
