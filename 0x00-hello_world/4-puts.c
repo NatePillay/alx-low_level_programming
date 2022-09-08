@@ -1,6 +1,8 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - Prints program line on screen
+ *
+ * Decscription we will run this again and again
  *
  * return: 0 after returning the function
  */
