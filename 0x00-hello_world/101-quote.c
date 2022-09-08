@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<unistd.h>
 /**
  * Description: main - we going to display code without printf or puts
  *
