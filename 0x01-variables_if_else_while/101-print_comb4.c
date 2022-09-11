@@ -7,10 +7,13 @@
  */
 int main(void)
 {
-	int i, j, k, l;
+	int i;
+	int j;
+	int k;
+	int l;
 
 	i = 0;
-	while (i < 1000)
+	while (i <= 1000)
 	{
 		j = (i / 100 + '0');
 		k = (i / 10 % 10 + '0');
