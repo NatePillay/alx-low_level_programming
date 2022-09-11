@@ -20,9 +20,9 @@ int main(void)
 		l = (i % 10 + '0');
 		if ((j < k) && (k < l))
 		{
-			putchar(l);
-			putchar(k);
 			putchar(j);
+			putchar(k);
+			putchar(l);
 			if (i != 789)
 			{
 				putchar(',');
