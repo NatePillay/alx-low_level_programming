@@ -12,15 +12,15 @@ int main(void)
 	i = 0;
 	while (i < 1000)
 	{
-		j = i / 100;
-		k = (i / 10) % 10;
-		l = i % 100;
+		j = (i / 100 + '0');
+		k = (i / 10 % 10 + '0');
+		l = (i % 10 + '0');
 		if (j < k && k < l)
 		{
-			putchar(l + '0');
-			putchar(k + '0');
-			putchar(j + '0');
-			if (i < 789)
+			putchar(l);
+			putchar(k);
+			putchar(j);
+			if (i != 789)
 			{
 				putchar(',');
 				putchar(' ');
