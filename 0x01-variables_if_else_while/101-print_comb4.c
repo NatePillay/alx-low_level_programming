@@ -15,7 +15,7 @@ int main(void)
 		j = (i / 100 + '0');
 		k = (i / 10 % 10 + '0');
 		l = (i % 10 + '0');
-		if (j < k && k < l)
+		if ((j < k && k < l))
 		{
 			putchar(l);
 			putchar(k);
