@@ -13,7 +13,7 @@ int main(void)
 	while (i < 1000)
 	{
 		j = i / 100;
-		k = (i / 100) % 10;
+		k = (i / 10) % 10;
 		l = i % 100;
 		if (j < k && k < l)
 		{
