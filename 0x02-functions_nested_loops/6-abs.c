@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * Description: _abs - function will be used to get absolute value
+ * _abs - function will be used to get absolute value
  * @c: this is the data type of the answer we want returns
- * Returns: 0, _abs will return an absolute int
+ * Return: _abs will return a value else multiply by -1
  */
 int _abs(int c)
 {
