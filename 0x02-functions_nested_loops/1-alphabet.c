@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * Description: main - print the whole alphabet out
+ * description: function to print whole alphabet
  *
  * Return: the alphabet and 0 if success
  */
