@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * description: function to print whole alphabet
- *
- * Return: the alphabet and 0 if success
+ *print_alphabet - prints used to get alphabet
+ *Return: Nothing
  */
 void print_alphabet(void)
 {
