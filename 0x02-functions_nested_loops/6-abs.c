@@ -1,16 +1,17 @@
 #include "main.h"
+#include <stdio.h>
 /**
- *_abs - this function will be used to get absolute value
- *@n: this is the data type of the answer we want returns
- *Returns: _abs number if success 0 if nothing
+ * Description: _abs - function will be used to get absolute value
+ * @n: this is the data type of the answer we want returns
+ * Returns: 0, _abs will return an absolute int
  */
 int _abs(int n)
 {
 	int n;
 
-	if (n < 0)
+	if (n >= 0 || n == 0)
 	{
-		n = (-1) * n;
-	}
-	_putchar(n);
+		return (n);
+	} else
+		return (n * -1);
 }
