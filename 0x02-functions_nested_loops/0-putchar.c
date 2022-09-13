@@ -1,4 +1,4 @@
-#include <_putchar>
+#include "main.h"
 /**
  * Description: main - Printing _putchar today
  *
@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 0; i <= 7; i++)
 	{
-		_putchar(c[i]);
+		_putchar(n[i]);
 	}
 	_putchar('\n');
 	return (0);
