@@ -7,15 +7,14 @@
  */
 int main(void)
 {
-	int t1, t2, n, i;
+	int i, n;
+	int t1 = 0, t2 = 1;
 	int nextTerm = t1 + t2;
 
 	n = 50;
-	t1 = 0;
-	t1 = 1;
 
 
-	for (i = 3; i <= 50; i++)
+	for (i = 3; i <= n; i++)
 	{
 		putchar(nextTerm);
 		t1 = t2;
