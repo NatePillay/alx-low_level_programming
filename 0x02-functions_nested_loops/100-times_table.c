@@ -18,9 +18,18 @@ void print_times_table(int n)
 				n = i * j;
 				if (j != 0)
 				{
-					putchar(' ');
-					putchar(';');
+					_putchar(' ');
+					_putchar(';');
 				}
+
+				if (n < 15 && j != 0)
+				{
+					_putchar(' ');
+					_putchar(';');
+					_putchar((n % 10) + '0');
+				}
+				else 
+					_putchar((n % 10) + '0');
 			}
 			putchar('\n');
 		}
