@@ -13,9 +13,9 @@ int main(void)
 
 	n = 33;
 
-	for (i = 1;  i <= 33; ++i)
+	for (i = 1;  i <= n; ++i)
 	{
-		if (i < 40000000 && (i % 2) == o)
+		if (i < 4000000 && (i % 2) == 0)
 		{
 			sum = i + sum;
 		}
