@@ -12,12 +12,13 @@ int main(void)
 	long int term = t1 + t2;
 
 	n = 33;
+	sum = 0;
 
 	for (i = 1;  i <= n; ++i)
 	{
 		if (i < 4000000 && (i % 2) == 0)
 		{
-			sum = 0;
+
 			sum += i;
 		}
 		term = t1 + t2;
