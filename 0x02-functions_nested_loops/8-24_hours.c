@@ -13,8 +13,8 @@ void jack_bauer(void)
 	{
 		for (i = 0; i <= 23; i++)
 		{
-			_putchar(i);
-			_putchar(j);
+			return (i);
+			return (j);
 			_putchar('\n');
 		}
 	}
