@@ -16,7 +16,7 @@ int main(void)
 
 	for (i = 3; i <= n; i++)
 	{
-		putchar(nextTerm);
+		printf(nextTerm);
 		t1 = t2;
 		t2 = nextTerm;
 		nextTerm = t1 + t2;
