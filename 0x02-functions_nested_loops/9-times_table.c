@@ -15,6 +15,6 @@ void times_table(void)
 			k = i * j;
 			_putchar(k);
 		}
-		printf('\n');
+		_putchar('\n');
 	}
 }
