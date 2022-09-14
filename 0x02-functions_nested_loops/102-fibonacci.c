@@ -14,9 +14,14 @@ int main(void)
 	n = 50;
 
 
-	for (i = 1; i < n; i++)
+	for (i = 1; i <= n; ++i)
 	{
-		printf("%ld, ", t2);
+		if (i != 50)
+		{
+			printf("%ld, ", t2);
+		}
+		else
+			printf("%ld", t2);
 		nextTerm = t1 + t2;
 		t1 = t2;
 		t2 = nextTerm;
