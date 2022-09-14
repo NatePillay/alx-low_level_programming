@@ -14,7 +14,7 @@ int main(void)
 	n = 50;
 
 
-	for (i = 1; i <= n; i++)
+	for (i = 1; i < n; i++)
 	{
 		printf("%ld, ", t2);
 		nextTerm = t1 + t2;
