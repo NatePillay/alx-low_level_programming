@@ -25,5 +25,6 @@ int main(void)
 		t2 = t1;
 		t2 = term;
 	}
+	printf("%ld\n", sum);
 	return (0);
 }
