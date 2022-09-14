@@ -16,12 +16,12 @@ int main(void)
 
 	for (i = 0; i < n; ++i)
 	{
-		if (i != 50)
+		if (i != 49)
 		{
-			printf("%ld, ", t2);
+			printf("%ld, ", t1);
 		}
 		else
-			printf("%ld", t2);
+			printf("%ld", t1);
 		nextTerm = t1 + t2;
 		t1 = t2;
 		t2 = nextTerm;
