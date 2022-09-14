@@ -14,7 +14,7 @@ int main(void)
 	n = 50;
 
 
-	for (i = 1; i <= n; ++i)
+	for (i = 0; i < n; ++i)
 	{
 		if (i != 50)
 		{
