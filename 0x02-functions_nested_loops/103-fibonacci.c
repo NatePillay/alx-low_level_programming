@@ -19,7 +19,7 @@ int main(void)
 		if (t1 < 4000000 && (t1 % 2) == 0)
 		{
 
-			sum += i;
+			sum = t1 + sum;
 		}
 		term = t1 + t2;
 		t2 = t1;
