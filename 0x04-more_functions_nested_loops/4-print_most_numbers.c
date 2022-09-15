@@ -2,20 +2,19 @@
 
 /**
  * print_most_numbers - will print most numbers
- *
+ *@c: variable to be tested
  * Return: 0
  */
-void print_most_numbers(void);
+void print_most_numbers(void)
 {
-	char c = '0';
+	int x;
 
-	while (c <= '9')
+	for (x = 0; x < 10; x++)
 	{
-		if (c != '2' && c != '4')
+		if (x != 2 && x != 4)
 		{
-			_putchar(c);
+			_putchar(x + '0');
 		}
-	c++;
 
 	}
 
