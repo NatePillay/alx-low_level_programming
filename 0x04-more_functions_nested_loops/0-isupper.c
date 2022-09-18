@@ -8,11 +8,7 @@ int _isupper(int c)
 {
 	if (c >= 65 && c <= 90)
 	{
-		putchar(1);
-	}
-	else
-	{
-		putchar(0);
+		return (1);
 	}
 	return (0);
 }
