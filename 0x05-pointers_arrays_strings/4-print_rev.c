@@ -17,9 +17,9 @@ void print_rev(char *s)
 
 	for (i = 0; i < count / 2; i++)
 	{
-		str = *s[i];
-		*s[i] = *s[count - i - 1];
-		*s[count - i - 1] = str;
+		str = s[i];
+		s[i] = s[count - i - 1];
+		s[count - i - 1] = str;
 	}
 
 }
