@@ -7,6 +7,9 @@
 
 void _puts(char *str)
 {
-	strcpy(str, *str);
-
+	while (*str != '\0')
+	{
+		_putchar(*str);
+		str = str + 1;
+	}
 }
