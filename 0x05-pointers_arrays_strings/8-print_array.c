@@ -10,10 +10,10 @@
 
 void print_array(int *a, int n)
 {
-	int length = sizeof(array) / sizeof(array[0]);
+	int i;
 
-	for (n = 0; n < length; n++)
+	for (i = 0; i < n; i++)
 	{
-		printf("%d, ", array[n]);
+		printf("%d, ", *a);
 	}
 }
