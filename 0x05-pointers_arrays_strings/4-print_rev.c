@@ -6,21 +6,16 @@
  */
 void print_rev(char *s)
 {
-	int i, str, count;
+	char *lastAddress = s
 
-	count  = 0;
-
-	while (*s != '\0')
+	while (*lastAddress)
 	{
-		count++;
-	}
+		++lastAddress;
 
-	for (i = 0; i < count / 2; i++)
-	{
-		str = s[i];
-		s[i] = s[count - i - 1];
-		s[count - i - 1] = str;
-		_putchar(*s);
+		for (int i = 0; i <= lastAddress; i--)
+		{
+			_putchar(*s);
+			_putchar('\n');
 	}
 	_putchar('\n');
 
