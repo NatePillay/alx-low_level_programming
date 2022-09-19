@@ -4,7 +4,7 @@
  * @s: first variable
  * Return: 0 if success
  */
-void print_rev(char *s);
+void print_rev(char *s)
 {
 	int i, str, count;
 
