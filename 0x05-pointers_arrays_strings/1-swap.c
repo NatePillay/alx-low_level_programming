@@ -4,6 +4,7 @@
  * swap_int - this function will swap them around
  * @a: varaible 1
  * @b: variable 2
+ * @c: variable additional
  * Return: 0 if success
  */
 
