@@ -9,11 +9,6 @@
 
 char *_strcat(char *dest, char *src)
 {
-	if (dest = NULL)
-	{
-		return NULL;
-	}
-
 	char *return_ptr = dest;
 
 
