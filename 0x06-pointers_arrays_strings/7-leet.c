@@ -16,12 +16,12 @@ char *leet(char *s1)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			if (s1[i] = a[i])
+			if (s1[i] == a[i])
 			{
 				s1[i] = n[i];
 			}
 		}
-	
+
 	}
 
 
