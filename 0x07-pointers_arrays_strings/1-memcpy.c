@@ -7,7 +7,7 @@
  * Return: the selected source data copied to dest
  */
 
-char *_memcpy(char *dest, char *src, unsigned int n);
+char *_memcpy(char *dest, char *src, unsigned int n)
 {
     char *destin = (char *)dest;
     char *source = (char *)src;
@@ -16,4 +16,5 @@ char *_memcpy(char *dest, char *src, unsigned int n);
     {
         destin[i] = source[i];
     }
+    return(dest);
 }
