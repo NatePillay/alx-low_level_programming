@@ -4,7 +4,7 @@
  * @s: character string
  * @b: what we want returned
  * @n: counting variable
- * return: string s
+ * Return: string s
  */
 
 char *_memset(char *s, char b, unsigned int n)
