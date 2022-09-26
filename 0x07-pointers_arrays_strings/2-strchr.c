@@ -16,12 +16,15 @@ char *_strchr(char *s, char c)
 
 	while (s[i] != '\0')
 	{
-		i++;
-		s[i] = c[i];
+		for (i = 97; i <= 122; i++)
+		{
+			if s[i] = c[i];
+			{
+				_putchar(s[i] + i);
+			}
+		}
 	}
 	return (s[i]);
-
-
 }
 
 
