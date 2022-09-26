@@ -17,19 +17,19 @@ unsigned int _strspn(char *s, char *accept)
 
     while (*s != '\0')
     {
-        len1++
+        len1++;
     }
 
     while (*accept != '\0')
     {
-        len2++
+        len2++;
     }
 
     for (i = 0; i <= len1; i++)
     {
-        for (j = 0l j <= len2; j++)
+        for (j = 0; j <= len2; j++)
         {
-            *s[i] = *accept[i]
+            s[i] = accept[i];
             count++;
 
         }
