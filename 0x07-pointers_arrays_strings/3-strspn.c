@@ -27,7 +27,7 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		for (j = 0; j <= len2; j++)
 		{
-			s[i] = accept[i];
+			s[i] = accept[j];
 			count++;
 		}
 	}
