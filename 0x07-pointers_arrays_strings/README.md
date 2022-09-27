@@ -29,3 +29,25 @@ do {
      
 } while (*s++);
 
+Question 3: I did not get this answer right, there is two loops and a condition between as we want to use all letters in first word 
+
+unsigned int _strspn(char *s, char *accept)
+{
+    int z = 0, x, y;
+
+	for (x = 0; s[x] != '\0'; x++)
+	{
+	    if (s[x] != 32)
+        {
+			for (y = 0; accept[y] != '\0'; y++)
+			{
+				if (s[x] == accept[y])
+					z++;
+			}
+        }
+        else
+            return (z);
+	}
+}
+int 
+
