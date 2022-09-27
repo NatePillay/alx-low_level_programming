@@ -27,8 +27,14 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		for (j = 0; j <= len2; j++)
 		{
-			s[i] = accept[j];
-			count++;
+			if (s[i] == accept[i])
+			{
+				count++;
+			}
+			else 
+			{
+				return (0);			
+			}
 		}
 	}
 	return (count);
