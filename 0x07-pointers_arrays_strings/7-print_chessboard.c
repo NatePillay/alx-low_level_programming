@@ -3,7 +3,6 @@
 /**
  * print_chessboard - function will print all values of chess board
  * @a: character variable
- * 
  * Return: Nothing
  */
 
@@ -20,4 +19,3 @@ void print_chessboard(char (*a)[8])
 		_putchar('\n');
 	}
 }
-
