@@ -50,4 +50,25 @@ unsigned int _strspn(char *s, char *accept)
 	}
 }
 
+Question 6: print out the array of chracters, positioned as chess board
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+		{
+			_putchar(a[i][j]);
+		}
+		_putchar('\n');
+	}
+
+
+Question 7: we want to sum the diagonals of a square matrix
+void print_diagsums(int *a, int size)
+{
+	int i, d1 = 0, d2 = 0;
+
+	for (i = 0; i < size; i++)
+	{
+		d1 += a[(size + 1) * i];
+		d2 += a[(size - 1) * (i + 1)];
+	}
 
