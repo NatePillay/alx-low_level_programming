@@ -18,7 +18,8 @@ int _sqrt_recursion(int n, int x)
 		}
 		else
 		{
-			return (0 + _sqrt_recursion(n, x + 1));
+			return (x);
 		}
 	}
+	return (0 + _sqrt_recursion(n, x + 1));
 }
