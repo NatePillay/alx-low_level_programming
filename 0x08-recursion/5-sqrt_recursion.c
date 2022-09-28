@@ -12,10 +12,14 @@ int _sqrt_recursion(int n, int x)
 
 	if (x % (n / x) != 0)
 	{
-		return (-1);
-	}
-	else
-	{
+		if (x * (n/x) == 0)
+		{
+			return (n);
+		}
+		else
+		{
+			return (-1);
+		}
 		return (0 + _sqrt_recursion(n, x + 1));
 	}
 }
