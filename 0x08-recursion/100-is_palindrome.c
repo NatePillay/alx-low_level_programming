@@ -35,7 +35,7 @@ int string_compare(char *s, int i, int j)
 
 	if (i > j)
 	{
-		return (i);
+		return (1);
 	}
 
 	if (s[i] == s[j])
