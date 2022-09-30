@@ -23,5 +23,6 @@ int main(int argc, char *argv[])
 
 	sum = num1 * num2;
 
-	printf("%d", sum);
+	printf("%d\n", sum);
+	return (0);
 }
