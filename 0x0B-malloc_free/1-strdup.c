@@ -9,11 +9,8 @@
 
 char *_strdup(char *str)
 {
-	unsigned int size;
 
-	char *c;
-
-	c = ((char *)malloc(sizeof(char) * size));
+	char *c = (char *)malloc(sizeof(char));
 
 	if (str == NULL)
 	{
@@ -28,5 +25,6 @@ char *_strdup(char *str)
 	}
 	c[i] = '\0';
 	return (c);
+	free(c);
 }
 
