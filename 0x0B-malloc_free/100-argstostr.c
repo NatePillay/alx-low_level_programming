@@ -11,7 +11,7 @@
 
 char *argstostr(int ac, char **av)
 {
-	int i;
+	int i = 0;
 	int len = 1;
 	char *str;
 
@@ -33,5 +33,7 @@ char *argstostr(int ac, char **av)
 	}
 
 	free(str);
+	return (str);
+
 }
 
