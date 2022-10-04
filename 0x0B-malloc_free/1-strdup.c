@@ -9,8 +9,8 @@
 
 char *_strdup(char *str)
 {
-	int i;
-	int j;
+	int i = 0;
+	int m = 0;
 	char *c;
 
 	if (str == NULL)
@@ -30,12 +30,12 @@ char *_strdup(char *str)
 	}
 
 
-	while (j < i)
+	while (m < i)
 	{
-		c[j] = str[j];
-		j++;
+		c[m] = str[m];
+		m++;
 	}
-	c[j] = '\0';
+	c[m] = '\0';
 	return (c);
 
 }
