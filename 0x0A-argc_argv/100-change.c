@@ -27,11 +27,11 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (i = 0; i < 4 && j >= 0; i++)
+	for (i = 0; i < 5 && j >= 0; i++)
 	{
-		while (amount > coins[i])
+		while (j > coins[i])
 		{
-			amount -= coins[i];
+			j -= coins[i];
 			amount++;
 		}
 	}
