@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	int i, sum = 0;
 
-	i = 1;
+	i = 0;
 
 	while (i != '\0')
 	{
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		i++;
+	i++;
 	}
 	for (i = 1; i < argc; i++)
 	{
