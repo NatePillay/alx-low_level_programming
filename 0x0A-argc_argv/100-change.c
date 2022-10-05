@@ -10,9 +10,9 @@
 
 int main(int argc, char *argv[])
 {
-	int cng, i, amount;
+	int i, j, amount;
 
-	int coins = {25, 10, 5, 2, 1};
+	int coins[] = {25, 10, 5, 2, 1};
 
 	if (argc != 2)
 	{
@@ -27,11 +27,15 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
+	for (i = 0; i < 4 && j >= 0; i++)
+	{
+		while (amount > coins[i])
+		{
+			amount -= coins[i];
+			amount++;
+		}
+	}
 
-
-
-
-
-
+	printf("%d\n", amount);
+	return (0);
 }
-
