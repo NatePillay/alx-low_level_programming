@@ -19,9 +19,9 @@ int main(int argc, char *argv[])
 		printf("%s\n", "Error");
 	}
 
-	amount = atoi(argv[1]);
+	j = atoi(argv[1]);
 
-	if (amount < 0)
+	if (j < 0)
 	{
 		printf("0\n");
 		return (0);
