@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - function to sum and print nums
+ * main - function to sum and print num
  * @argc: count of arguments
  * @argv: array of pointers to char
  * Return: sum of ints
