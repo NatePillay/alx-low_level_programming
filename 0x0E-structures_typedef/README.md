@@ -1,0 +1,1 @@
+Struct fresh struct clean
