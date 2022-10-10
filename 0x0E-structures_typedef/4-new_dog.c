@@ -45,17 +45,26 @@ char *_strcpy(char *dest, char *src)
  * new_dog - type def function to store new data
  * @name: var 1
  * @age: var 2
- * #owner: var 3
+ * @owner: var 3
+ * Return: pointer
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	if (!dog_t)
+	if (dog_t == NULL)
 	{
 		return (NULL);
 	}
 
-	char *s;
-	char *y;
+	char *xname;
+	char *yown;
 
-	s = malloc
+	xname = (char *)malloc(sizeof(char) * strlen(name) - 1);
+	yown = (char *)malloc(sizeof(char) * strlen(owner) - 1);
+
+	strcpy(xname, name);
+	strcpy(yown, owner);
+
+
+	return (new_dog);
+}
