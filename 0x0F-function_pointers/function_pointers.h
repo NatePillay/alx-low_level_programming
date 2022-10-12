@@ -1,5 +1,5 @@
-#ifndef function_pointers.h
-#define function_pointers.h
+#ifndef function_pointers_h
+#define function_pointers_h
 
 #include <stdio.h>
 int _putchar(char c);
