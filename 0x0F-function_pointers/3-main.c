@@ -5,7 +5,7 @@
 
 /**
  * main - program that performs operation
- * @argc: number of arguments
+ * @argc: number of arguments 1
  * @argv: array of arguments
  * Return: Always 0 (success)
  */
@@ -24,7 +24,7 @@ int main(int argc, int *argv[])
 
 	func = get_op_func(argv[2]);
 
-	if (argv[2][1] != '\0');
+	if (argv[2][1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
