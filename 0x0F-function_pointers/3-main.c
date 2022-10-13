@@ -29,6 +29,6 @@ int main(int argc, int *argv[])
 		exit(99);
 	}
 
-	printf("%d\n", func(atoi([1]), atoi(argv[3])));
+	printf("%d\n", func(atoi(argv[1]), atoi(argv[3])));
 	return (0);
 }
