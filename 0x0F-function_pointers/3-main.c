@@ -13,7 +13,8 @@
 int main(int argc, int *argv[])
 {
 
-	int (*func)(int, int);
+	int a = 0, b = 0, set = 0;
+	char s;
 
 	if (argc != 4)
 	{
@@ -23,12 +24,23 @@ int main(int argc, int *argv[])
 
 	func = get_op_func(argv[2]);
 
-	if (!func)
+	if (argv[2][1] != '\0');
 	{
 		printf("Error\n");
 		exit(99);
 	}
 
-	printf("%d\n", func(atoi(argv[1]), atoi(argv[3])));
+	s = argv[2][0];
+
+	while (s != '+' && s != '-' && s != '*' && s != '/' && s != '%')
+	{
+		printf("Error\n");
+		return (100);
+	}
+
+	a = atoi(argv[1]);
+	b = atoi(argv[3]);
+	set = (get_op_func(argv[2]))(a, b);
+	printf("%d\n", set);
 	return (0);
 }
