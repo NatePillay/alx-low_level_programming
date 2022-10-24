@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 
 /**
  * print_listint - function to print elements
@@ -14,7 +15,6 @@ size_t print_listint(const listint_t *h)
 
 	while (h != NULL)
 	{
-		printf("%d\n", n);
 		h = h->next;
 		count++;
 	}
