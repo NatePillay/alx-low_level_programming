@@ -11,11 +11,12 @@ int get_bit(unsigned long int n, unsigned int index)
 	int new_num;
 
 	new_num = n >> (index - 1);
+	
+	return (new_num & 1);
 
 	if (new_num != 0 || new_num != 1)
 	{
 		return (-1);
 	}
 
-	return (new_num & 1);
 }
