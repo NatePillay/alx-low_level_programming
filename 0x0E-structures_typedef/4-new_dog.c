@@ -1,4 +1,7 @@
 #include "dog.h"
+#include <stddef.h>
+#include <stdlib.h>
+
 
 /**
  * new_dog - this function is to create a new struct type
@@ -23,7 +26,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	Newdog->name = malloc(sizeof(char) * (c + 1));
 	if (Newdog->name == NULL)
 	{
-		free (Newdog);
+		free(Newdog);
 		return (NULL);
 	}
 
@@ -32,7 +35,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	Newdog->owner = malloc(sizeof(char) * (c + 1));
 	if (Newdog->owner == NULL)
 	{
-		free (Newdog);
+		free(Newdog);
 		return (NULL);
 	}
 
