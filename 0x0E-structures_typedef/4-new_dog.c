@@ -1,6 +1,6 @@
 #include "dog.h"
 #include <stdlib.h>
-
+#include <string.h>
 
 /**
  * _strlen - function to find string length
@@ -51,7 +51,9 @@ char *_strcpy(char *dest, char *src)
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	if (dog_t == NULL)
+	dog_t *Newdog;
+
+	if (Newdog == NULL)
 	{
 		return (NULL);
 	}
@@ -66,5 +68,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 	strcpy(yown, owner);
 
 
-	return (new_dog);
+	return (Newdog);
 }
