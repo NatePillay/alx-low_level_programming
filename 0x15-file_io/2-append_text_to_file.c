@@ -31,16 +31,12 @@ int append_text_to_file(const char *filename, char *text_content)
 		return (-1);
 	}
 
-	if (f_exists(filename))
-	{
-		return (1);
-	}
-	else
+	if (!f_exists(filename))
 	{
 		return (-1);
 	}
 
-	fd = open(filename, O_RDONLY | O_APPEND);
+	fd = open(filename, O_RDONLY | O_APPEND, 0600);
 	if (fd == -1)
 	{
 		return (-1);
