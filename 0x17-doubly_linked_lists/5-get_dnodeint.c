@@ -12,14 +12,14 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	dlistint_t *first_pointer = head;
 	unsigned int i;
 
-	for (i = 0; i < index; i++)
+	for (i = 0; first_pointer && i < index; i++)
 	{
 		first_pointer = first_pointer->next;
 	}
 
-	while (first_pointer != NULL)
+	while (first_pointer != index)
 	{
-		first_pointer = first_pointer->next;
+		return (NULL);
 	}
 
 	return (first_pointer);
