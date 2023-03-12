@@ -112,3 +112,69 @@ If *head is not NULL (i.e., if the list was not empty), the prev field of the or
 
 
 
+Here's the implementation of the requested function delete_dnodeint_at_index which deletes the node at the specified index index of the doubly linked list whose head node is pointed by the pointer head. The function returns 1 if the deletion is successful, otherwise, it returns -1. The index index starts from 0.
+
+c
+Copy code
+/**
+ * delete_dnodeint_at_index - Deletes the node at a given position
+ * @head: Pointer to a pointer to the head node of a doubly linked list
+ * @index: Index of the node to be deleted (starting from 0)
+ *
+ * Return: 1 if successful, -1 otherwise
+ */
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
+{
+    dlistint_t *current_node, *prev_node, *next_node;
+    unsigned int i;
+
+    if (head == NULL || *head == NULL)
+        return (-1);
+
+    /* Special case: Delete the first node */
+    if (index == 0)
+    {
+        next_node = (*head)->next;
+        if (next_node != NULL)
+            next_node->prev = NULL;
+        free(*head);
+        *head = next_node;
+        return (1);
+    }
+
+    /* Find the node at index */
+    current_node = *head;
+    for (i = 0; i < index && current_node != NULL; i++)
+        current_node = current_node->next;
+
+    /* If we could not find the node at index */
+    if (current_node == NULL)
+        return (-1);
+
+    /* Delete the node */
+    prev_node = current_node->prev;
+    next_node = current_node->next;
+    if (prev_node != NULL)
+        prev_node->next = next_node;
+    if (next_node != NULL)
+        next_node->prev = prev_node;
+    free(current_node);
+
+    return (1);
+}
+Explanation of the function:
+
+First, we declare three pointer variables current_node, prev_node, and next_node. We also declare an integer variable i to be used in the loop later.
+
+We check if the pointer to the head node head or the head node itself is NULL. If either of them is NULL, we return -1 indicating that the deletion failed.
+
+If the index index is 0, we delete the first node of the list. We update the prev pointer of the second node (if it exists) to NULL, free the memory of the first node, and update the head pointer to point to the second node (if it exists). Then, we return 1 indicating that the deletion was successful.
+
+If the index index is not 0, we need to find the node at index index of the list so that we can delete it. We start from the head node and iterate through the list until we reach the node at index index or the end of the list, whichever comes first.
+
+If we could not find the node at index index, we return -1 indicating that the deletion failed.
+
+If we found the node at index index, we update the prev and next pointers of the adjacent nodes to link them with each other and delete the current node.
+
+Finally, we free the memory of the current node and return 1 indicating that the deletion was successful.
+
