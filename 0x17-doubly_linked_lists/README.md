@@ -178,3 +178,34 @@ If we found the node at index index, we update the prev and next pointers of the
 
 Finally, we free the memory of the current node and return 1 indicating that the deletion was successful.
 
+
+
+
+
+To find the largest palindrome made from the product of two 3-digit numbers, we need to iterate through all possible pairs of 3-digit numbers, multiply them, and check if the result is a palindrome. We can then keep track of the largest palindrome we find.
+
+Here's the Python code to implement the above approach:
+
+python
+Copy code
+def is_palindrome(n):
+    """
+    Returns True if the number n is a palindrome, False otherwise
+    """
+    return str(n) == str(n)[::-1]
+
+largest_palindrome = 0
+
+for i in range(100, 1000):
+    for j in range(i, 1000):
+        product = i * j
+        if is_palindrome(product) and product > largest_palindrome:
+            largest_palindrome = product
+
+print("The largest palindrome made from the product of two 3-digit numbers is:", largest_palindrome)
+In the code above, we define a helper function is_palindrome that returns True if the number n is a palindrome, False otherwise. We then initialize the variable largest_palindrome to 0.
+
+We then iterate through all possible pairs of 3-digit numbers using two nested for loops. For each pair, we multiply them to get the product, check if the product is a palindrome using the is_palindrome function, and update the value of largest_palindrome if the product is a palindrome and is greater than the current value of largest_palindrome.
+
+Finally, we print out the value of largest_palindrome which gives us the answer to the problem.
+
